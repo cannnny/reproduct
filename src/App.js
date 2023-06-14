@@ -1,3 +1,4 @@
+import './reset.css';
 import './App.scss';
 
 function App() {
