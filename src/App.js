@@ -5,30 +5,30 @@ function App() {
   return (
     <div className='App'>
       <header>
-        <div className='Container'>
+        <div className='container'>
           <div className='headerLogo'>
             <img src='/img/logo.svg'  alt='' />
           </div>
           <div className='headerMenu'>
             <ul>
-              <li>About</li>
-              <li>Bicycle</li>
+              <li><a href='#about'>About</a></li>
+              <li><a href='#bicycle'>Bicycle</a></li>
             </ul>
           </div>
         </div>
       </header>
       <div className='main'>
-        <div className='Container'>
+        <div className='container'>
           <img src='/img/mainvisual.jpg' alt='' />
-          <div className='about'>
-            <div className='Container'>
+          <div id='title' className='about'>
+            <div className='container'>
               <h1>About</h1>
               <img src='/img/about.jpg' alt='' />
               <h2>KAKERU MIYAICHI</h2>
               <p>テキスト</p>
             </div>
           </div>
-          <div className='bicycle'>
+          <div id='bicycle' className='bicycle'>
             <div className='container'>
               <h1>Bicycle</h1>
               <div className='contents'>
@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <div className='footerContainer'>
+        <div className='footercontainer'>
           <p>@ 2020 Profile</p>
         </div>
       </footer>
