@@ -4,17 +4,17 @@ header {
   display: flex;
   align-items: center;
 
-  .container {
+  .header_inner {
     display: flex;
     width: 100%;
     padding: 0 12px; 
 
-    .headerLogo {
+    .header_logo {
       width: 120px;
       height: 40px;
     }
   
-    .headerMenu {
+    .header_menu {
       display: flex;
       align-items: center;
       margin-left: auto;
@@ -36,20 +36,20 @@ header {
   }
 }
 
-.main {
-  .container {
-    img {
-      object-fit: cover;
-    }
-  }
+.cover_img {
+  height: calc(100vh - 60px);
+  object-fit: cover;
+}
 
-  .contents {
+.main {
+  .main_inner {
     padding: 0 12px;
     margin-top: 60px;
 
-    h1 {
+    h2 {
       text-align: center;
-      margin-bottom: 60px;
+      margin: 60px 0;
+      font-size: 40px;
     }
 
     .heading {
@@ -61,11 +61,11 @@ header {
       height: 100px;
       margin-left: auto;
       margin-right: auto;
-      border-radius: 180px;
+      border-radius: 50%;
     }
 
-    h2 {
-      margin: 15px 0 10px 0;
+    h3 {
+      margin: 15px 0 10px;
       font-size: 18px;
     }
 
@@ -88,7 +88,7 @@ header {
 footer {
   margin-top: 100px;
 
-  .container {
+  .footer_inner {
       padding: 10px 0;
       text-align: center;
       font-size: 10px;
