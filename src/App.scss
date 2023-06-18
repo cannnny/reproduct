@@ -7,24 +7,31 @@ header {
   .header_inner {
     display: flex;
     width: 100%;
-    padding: 0 12px; 
+    padding: 0 12px;
+
+    @media (min-width: 600px) {
+      padding: 0 30px;
+    }
 
     .header_logo {
       width: 120px;
       height: 40px;
     }
-  
+
     .header_menu {
       display: flex;
       align-items: center;
       margin-left: auto;
       font-size: 15px;
+      @media (min-width: 600px) {
+        font-size: 16px;
+      }
 
       ul {
         display: flex;
       }
       li {
-        list-style: none; 
+        list-style: none;
       }
       a {
         display: block;
@@ -45,23 +52,15 @@ header {
   .main_inner {
     padding: 0 12px;
     margin-top: 60px;
+    color: #24292e;
 
     h2 {
       text-align: center;
       margin: 60px 0;
       font-size: 40px;
-    }
-
-    .heading {
-      border-bottom: 1px solid #383e45;
-    }
-
-    .icon {
-      width: 100px;
-      height: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 50%;
+      @media (min-width: 600px) {
+        margin: 80px 0 30px;
+      }
     }
 
     h3 {
@@ -72,9 +71,39 @@ header {
     p {
       font-size: 14px;
     }
-  }
 
-  #bicycle {
+    .heading {
+      border-bottom: 1px solid #383e45;
+    }
+
+    .flex {
+      @media (min-width: 600px) {
+        display: flex;
+        justify-content: center;
+        .photos {
+          margin: 10px;
+        }
+      }
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      @media (min-width: 600px) {
+        margin-left: 0;
+        margin-right: 30px;
+      }
+    }
+
+    .about_text {
+      @media (min-width: 600px) {
+        width: 200px;
+      }
+    }
+
     .photos {
       text-align: center;
     }
@@ -89,8 +118,8 @@ footer {
   margin-top: 100px;
 
   .footer_inner {
-      padding: 10px 0;
-      text-align: center;
-      font-size: 10px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 10px;
   }
 }
