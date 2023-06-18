@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./App.scss";
+import mainVisual from "./mainvisual.jpg";
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
           </div>
         </div>
       </header>
-      <img className="cover_img" src="/img/mainvisual.jpg" alt="" />
+      <div
+        className="main-visual"
+        style={{ backgroundImage: `url(${mainVisual})` }}
+      ></div>
       <div className="main">
         <div className="container main_inner">
           <div id="about">
