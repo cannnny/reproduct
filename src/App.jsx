@@ -23,17 +23,18 @@ function App() {
         </div>
       </header>
       <div
-        className="main-visual"
+        className="mainVisual"
         style={{ backgroundImage: `url(${mainVisual})` }}
       ></div>
       <div className="main">
         <div className="container main_inner">
+          <h1>Profile</h1>
           <div id="about">
             <h2>
               <span className="heading">About</span>
             </h2>
             <div className="flex">
-              <img className="icon" src="/img/about.jpg" alt="" />
+              <img className="flex_icon" src="/img/about.jpg" alt="" />
               <div className="about_text">
                 <h3>KAKERU MIYAICHI</h3>
                 <p>テキスト</p>
@@ -46,17 +47,17 @@ function App() {
             </h2>
             <div className="flex">
               <div className="photos">
-                <img className="photo" src="/img/bicycle1.jpg" alt="" />
+                <img src="/img/bicycle1.jpg" alt="" />
                 <h3>タイトル</h3>
                 <p>テキスト</p>
               </div>
               <div className="photos">
-                <img className="photo" src="/img/bicycle2.jpg" alt="" />
+                <img src="/img/bicycle2.jpg" alt="" />
                 <h3>タイトル</h3>
                 <p>テキスト</p>
               </div>
               <div className="photos">
-                <img className="photo" src="/img/bicycle3.jpg" alt="" />
+                <img src="/img/bicycle3.jpg" alt="" />
                 <h3>タイトル</h3>
                 <p>テキスト</p>
               </div>

@@ -48,7 +48,7 @@ header {
   }
 }
 
-.main-visual {
+.mainVisual {
   height: calc(100vh - 60px);
   background-position: center;
   @media (min-width: 600px) {
@@ -58,10 +58,14 @@ header {
 }
 
 .main {
-  .main_inner {
+  &_inner {
     padding: 0 12px;
     margin-top: 60px;
     color: #24292e;
+
+    h1 {
+      display: none;
+    }
 
     h2 {
       text-align: center;
@@ -89,13 +93,14 @@ header {
       @media (min-width: 600px) {
         display: flex;
         justify-content: center;
+
         .photos {
           margin: 10px;
         }
       }
     }
 
-    .icon {
+    .flex_icon {
       width: 100px;
       height: 100px;
       margin-left: auto;
@@ -115,10 +120,10 @@ header {
 
     .photos {
       text-align: center;
-    }
 
-    .photo {
-      margin-top: 30px;
+      img {
+        margin-top: 30px;
+      }
     }
   }
 }
